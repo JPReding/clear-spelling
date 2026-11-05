@@ -21,7 +21,7 @@ let WORDS=[
 ];
 WORDS=CURRICULUM_LISTS.flatMap(list=>list.words.map(word=>({word,list:list.list,sentence:'',hint:'Say the word slowly, listen for each sound, and think about the spelling pattern.'})));
 const state=JSON.parse(localStorage.getItem('clear-spelling-progress')||'{}'); state.attempts??={}; state.mastered??={}; state.missed??={};
-state.settings??={voice:'',rate:0.8}; state.levels??={};
+state.settings??={voice:'Google US English',rate:0.8}; state.levels??={};
 let mode='daily', queue=[], index=0, built=[], adaptiveSession=false, typedOverride=false;
 const $=id=>document.getElementById(id); const save=()=>localStorage.setItem('clear-spelling-progress',JSON.stringify(state));
 function speak(){const w=queue[index]; if(!w)return; speechSynthesis.cancel(); const wordAudio=new SpeechSynthesisUtterance(w.word); wordAudio.rate=Number(state.settings.rate)||.8; const voice=speechSynthesis.getVoices().find(v=>v.voiceURI===state.settings.voice||v.name===state.settings.voice); if(voice)wordAudio.voice=voice; speechSynthesis.speak(wordAudio)}
