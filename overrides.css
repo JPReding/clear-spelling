@@ -9,4 +9,12 @@
 .voice-select{width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;background:#f8f9fc;color:var(--ink)}.rate-label{display:flex;align-items:center;gap:10px;margin-top:12px;color:var(--muted);font-size:13px}.rate-label input{flex:1}.rate-label span{min-width:34px;text-align:right}
 .audio-note{margin:12px 0 0;color:var(--muted);font-size:13px;line-height:1.45}
 .audio-status{margin:10px auto 0;max-width:34rem;color:var(--muted);font-size:13px;line-height:1.4}
+.word-card{padding:20px 24px 16px}
+.listen-label{color:#9a7a46;font-size:11px;font-weight:800;letter-spacing:.14em;margin-bottom:12px}
+.sound-circle{width:72px;height:72px;border:2px solid #f1e5d3;font-size:29px}
+.sound-circle:active{transform:scale(.96)}
+.word-card>.muted{margin:10px 0 5px}
+.feedback{text-align:center;min-height:32px;font-weight:800;padding:12px 8px 4px;border-top:1px solid #f2e8d7;margin-top:14px}
+.feedback.good{color:var(--green)}
+.feedback.bad{color:var(--red)}
 .modal-card{max-height:calc(100vh - 40px);overflow:hidden}.list-options{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important;max-height:300px;overflow-y:auto;overflow-x:hidden;width:100%;padding:2px}.list-options button{min-width:0!important;min-height:58px!important;padding:9px 6px!important;flex:none!important;text-align:center!important;font-size:14px!important}.list-options button small{font-size:9px!important;line-height:1.15!important;white-space:normal!important}@media(min-width:650px){.list-options{grid-template-columns:repeat(4,minmax(0,1fr))!important}}
