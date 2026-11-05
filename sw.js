@@ -1,4 +1,4 @@
-const CACHE = 'clear-spelling-v7';
+const CACHE = 'clear-spelling-v8';
 const assets = ['./', './index.html', './styles.css', './overrides.css', './app.js', './lists-data.js', './manifest.webmanifest'];
 
 self.addEventListener('install', event => {
